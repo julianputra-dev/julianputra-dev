@@ -9,4 +9,5 @@
   <a href="https://github.com/julianputra-dev/LASTBITE"><img src="https://img.shields.io/badge/Repo-LASTBITE-21262D?style=flat-square" alt="LASTBITE"></a>
   <a href="https://github.com/julianputra-dev/SIJA-SecLab"><img src="https://img.shields.io/badge/Repo-SIJA--SecLab-21262D?style=flat-square" alt="SIJA-SecLab"></a>
   <a href="https://github.com/julianputra-dev/WAR.info"><img src="https://img.shields.io/badge/Repo-WAR.info-21262D?style=flat-square" alt="WAR.info"></a>
+  <a href="https://github.com/julianputra-dev/SistemCerdas-Tugas-"><img src="https://img.shields.io/badge/Repo-SistemCerdas-21262D?style=flat-square" alt="SistemCerdas-Tugas-"></a>
 </p>
