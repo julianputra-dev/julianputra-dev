@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 200" width="100%" height="200" fill="none">
+  <defs>
+    <!-- Subtle Metallic Dark Graphite Surface (selaras dengan GitHub Dark & avatar monokrom) -->
+    <linearGradient id="bg-graphite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="55%" stop-color="#0D1117" />
+      <stop offset="100%" stop-color="#13171E" />
+    </linearGradient>
+  </defs>
+
   <style>
     <![CDATA[
     .txt {
@@ -8,9 +17,11 @@
       letter-spacing: 0.5px;
     }
 
-    .locked { fill: #F0F6FC; }
-    .cursor-char { fill: #E63946; }
-    .noise { fill: #7D8590; }
+    /* Palet Warna: GitHub Graphite, Platinum White, Warm Sand/Amber & Burnt Terracotta (Bebas Klise AI) */
+    .name-color  { fill: #E6EDF3; }
+    .skill-color { fill: #E5C07B; }
+    .cursor-char { fill: #D97757; }
+    .noise       { fill: #6E7681; }
 
     /* =====================================================================
        TIMELINE: 10s Total Cycle (Pure CSS steps(1, end) Frame-by-Frame)
@@ -92,8 +103,8 @@
       81.5%, 100% { transform: translate(0, 0); }
     }
 
-    /* --- CHROMATIC ECHO LAYERS (CRIMSON & SILVER) --- */
-    @keyframes ghost-red {
+    /* --- CHROMATIC ECHO LAYERS (TERRACOTTA & BRUSHED SILVER) --- */
+    @keyframes ghost-terracotta {
       0%, 27.9% { opacity: 0; transform: translate(0, 0); }
       28% { opacity: 0.9; transform: translate(-12px, -3px); }
       29.5% { opacity: 0.95; transform: translate(14px, 2px); }
@@ -146,7 +157,7 @@
 
     /* Apply animations */
     .stage { animation: heavy-shake 10s steps(1, end) infinite; }
-    .echo-red { animation: ghost-red 10s steps(1, end) infinite; }
+    .echo-terracotta { animation: ghost-terracotta 10s steps(1, end) infinite; }
     .echo-silver { animation: ghost-silver 10s steps(1, end) infinite; }
     .glitch-bars { animation: bars-burst 10s steps(1, end) infinite; }
 
@@ -187,63 +198,63 @@
     ]]>
   </style>
 
-  <!-- Minimalist Dark Canvas -->
-  <rect width="840" height="200" rx="8" fill="#0D1117" />
-  <rect x="0.5" y="0.5" width="839" height="199" rx="7.5" fill="none" stroke="#21262D" stroke-width="1" />
+  <!-- Minimalist Dark Graphite Canvas (Selaras dengan GitHub Dark Theme) -->
+  <rect width="840" height="200" rx="8" fill="url(#bg-graphite)" />
+  <rect x="0.5" y="0.5" width="839" height="199" rx="7.5" fill="none" stroke="#30363D" stroke-width="1" />
 
   <!-- ==================== CHROMATIC GLITCH GHOST ECHOES ==================== -->
-  <!-- Crimson Offset Echo -->
-  <g class="echo-red">
-    <text x="420" y="114" text-anchor="middle" class="txt" fill="#E63946">#9x@!7 %$=04 !#8^@*1?9/0</text>
+  <!-- Burnt Terracotta Offset Echo -->
+  <g class="echo-terracotta">
+    <text x="420" y="114" text-anchor="middle" class="txt" fill="#D97757">#9x@!7 %$=04 !#8^@*1?9/0</text>
   </g>
-  <!-- Silver Offset Echo -->
+  <!-- Brushed Silver Offset Echo -->
   <g class="echo-silver">
-    <text x="420" y="114" text-anchor="middle" class="txt" fill="#94A3B8">4$!#9x K0@%7 ^*!#2$9@!#?</text>
+    <text x="420" y="114" text-anchor="middle" class="txt" fill="#8B949E">4$!#9x K0@%7 ^*!#2$9@!#?</text>
   </g>
 
   <!-- ==================== MAIN ANIMATED TEXT STAGE ==================== -->
   <g class="stage">
-    <!-- STABLE: NAMA -->
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-name">Julian Putra Dhanurrullah</text>
+    <!-- STABLE: NAMA (Platinum White) -->
+    <text x="420" y="114" text-anchor="middle" class="txt name-color f-name">Julian Putra Dhanurrullah</text>
 
     <!-- GLITCH 1: NAMA HANCUR JADI HURUF, ANGKA, SIMBOL ACAK -->
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-g1">Jul!4n P#tr@ Dh4n%rr#ll4h</text>
+    <text x="420" y="114" text-anchor="middle" class="txt name-color f-g1">Jul!4n P#tr@ Dh4n%rr#ll4h</text>
     <text x="420" y="114" text-anchor="middle" class="txt cursor-char f-g2">J%9!#n 0x7r@ $h4^*r#1!4#</text>
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-g3">#9x@!7 %$=04 !#8^@*1?9/0</text>
+    <text x="420" y="114" text-anchor="middle" class="txt skill-color f-g3">#9x@!7 %$=04 !#8^@*1?9/0</text>
     <text x="420" y="114" text-anchor="middle" class="txt cursor-char f-g4">4$!#9x K0@%7 ^*!#2$9@!#?</text>
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-g5">~7#@$1 9x%!= /0?#4^@*8$1</text>
+    <text x="420" y="114" text-anchor="middle" class="txt name-color f-g5">~7#@$1 9x%!= /0?#4^@*8$1</text>
     <text x="420" y="114" text-anchor="middle" class="txt noise f-g6">F#9@!_ %7$=4 !0x@9#1?$~#</text>
 
-    <!-- DECODE BERTAHAP: MENYUSUN -> Full-Stack Web Developer -->
-    <text x="420" y="114" text-anchor="middle" class="txt f-d1"><tspan class="locked">Ful</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">@!_$7% =3# !0x@9#1?$</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d2"><tspan class="locked">Full-S</tspan><tspan class="cursor-char">7</tspan><tspan class="noise">%4k W$# 8@x!9#p3?</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d3"><tspan class="locked">Full-Stac</tspan><tspan class="cursor-char">%</tspan><tspan class="noise"> W3# D$v@9#p3r</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d4"><tspan class="locked">Full-Stack W</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">b D3v#10p@r</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d5"><tspan class="locked">Full-Stack Web </tspan><tspan class="cursor-char">D</tspan><tspan class="noise">3v#l0p@r</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d6"><tspan class="locked">Full-Stack Web Dev</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">l0p3r</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d7"><tspan class="locked">Full-Stack Web Develo</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">3r</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-d8"><tspan class="locked">Full-Stack Web Develope</tspan><tspan class="cursor-char">7</tspan></text>
+    <!-- DECODE BERTAHAP: MENYUSUN -> Full-Stack Web Developer (Warm Brushed Amber) -->
+    <text x="420" y="114" text-anchor="middle" class="txt f-d1"><tspan class="skill-color">Ful</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">@!_$7% =3# !0x@9#1?$</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d2"><tspan class="skill-color">Full-S</tspan><tspan class="cursor-char">7</tspan><tspan class="noise">%4k W$# 8@x!9#p3?</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d3"><tspan class="skill-color">Full-Stac</tspan><tspan class="cursor-char">%</tspan><tspan class="noise"> W3# D$v@9#p3r</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d4"><tspan class="skill-color">Full-Stack W</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">b D3v#10p@r</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d5"><tspan class="skill-color">Full-Stack Web </tspan><tspan class="cursor-char">D</tspan><tspan class="noise">3v#l0p@r</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d6"><tspan class="skill-color">Full-Stack Web Dev</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">l0p3r</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d7"><tspan class="skill-color">Full-Stack Web Develo</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">3r</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-d8"><tspan class="skill-color">Full-Stack Web Develope</tspan><tspan class="cursor-char">7</tspan></text>
 
-    <!-- STABLE: BIDANG KEAHLIAN -->
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-skill">Full-Stack Web Developer</text>
+    <!-- STABLE: BIDANG KEAHLIAN (Warm Brushed Amber / One Dark Gold) -->
+    <text x="420" y="114" text-anchor="middle" class="txt skill-color f-skill">Full-Stack Web Developer</text>
 
     <!-- GLITCH 2: KEAHLIAN HANCUR JADI HURUF, ANGKA, SIMBOL ACAK -->
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-r1">Fu!!-St@ck W3b D3v#l0p3r</text>
+    <text x="420" y="114" text-anchor="middle" class="txt skill-color f-r1">Fu!!-St@ck W3b D3v#l0p3r</text>
     <text x="420" y="114" text-anchor="middle" class="txt cursor-char f-r2">F#9!-0x@%k ^3# !$v9#10?r</text>
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-r3">%8#@!7 0x9$= !#4^@*2?1/8</text>
+    <text x="420" y="114" text-anchor="middle" class="txt name-color f-r3">%8#@!7 0x9$= !#4^@*2?1/8</text>
     <text x="420" y="114" text-anchor="middle" class="txt cursor-char f-r4">9$!#4x @0#%2 ^*!#7$1@!#?</text>
-    <text x="420" y="114" text-anchor="middle" class="txt locked f-r5">~3#@$9 7x%!= /8?#2^@*4$0</text>
+    <text x="420" y="114" text-anchor="middle" class="txt skill-color f-r5">~3#@$9 7x%!= /8?#2^@*4$0</text>
     <text x="420" y="114" text-anchor="middle" class="txt noise f-r6">J#9@!_ P7$=4 D0x@9#1?$~#</text>
 
-    <!-- DECODE BERTAHAP: MENYUSUN KEMBALI -> Julian Putra Dhanurrullah -->
-    <text x="420" y="114" text-anchor="middle" class="txt f-n1"><tspan class="locked">Jul</tspan><tspan class="cursor-char">!</tspan><tspan class="noise">9@ P$7!4 D#4^*r#1!4#?</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n2"><tspan class="locked">Julian</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">P#7r@ D$4n%r#l!4h?</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n3"><tspan class="locked">Julian Put</tspan><tspan class="cursor-char">r</tspan><tspan class="noise">@ Dh4n%rr#l4h?</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n4"><tspan class="locked">Julian Putra </tspan><tspan class="cursor-char">D</tspan><tspan class="noise">h@n#rr$l!4h</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n5"><tspan class="locked">Julian Putra Dha</tspan><tspan class="cursor-char">n</tspan><tspan class="noise">#rr$ll4h</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n6"><tspan class="locked">Julian Putra Dhanur</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">ull4h</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n7"><tspan class="locked">Julian Putra Dhanurrul</tspan><tspan class="cursor-char">!</tspan><tspan class="noise">4h</tspan></text>
-    <text x="420" y="114" text-anchor="middle" class="txt f-n8"><tspan class="locked">Julian Putra Dhanurrulla</tspan><tspan class="cursor-char">#</tspan></text>
+    <!-- DECODE BERTAHAP: MENYUSUN KEMBALI -> Julian Putra Dhanurrullah (Platinum White) -->
+    <text x="420" y="114" text-anchor="middle" class="txt f-n1"><tspan class="name-color">Jul</tspan><tspan class="cursor-char">!</tspan><tspan class="noise">9@ P$7!4 D#4^*r#1!4#?</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n2"><tspan class="name-color">Julian</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">P#7r@ D$4n%r#l!4h?</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n3"><tspan class="name-color">Julian Put</tspan><tspan class="cursor-char">r</tspan><tspan class="noise">@ Dh4n%rr#l4h?</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n4"><tspan class="name-color">Julian Putra </tspan><tspan class="cursor-char">D</tspan><tspan class="noise">h@n#rr$l!4h</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n5"><tspan class="name-color">Julian Putra Dha</tspan><tspan class="cursor-char">n</tspan><tspan class="noise">#rr$ll4h</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n6"><tspan class="name-color">Julian Putra Dhanur</tspan><tspan class="cursor-char">#</tspan><tspan class="noise">ull4h</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n7"><tspan class="name-color">Julian Putra Dhanurrul</tspan><tspan class="cursor-char">!</tspan><tspan class="noise">4h</tspan></text>
+    <text x="420" y="114" text-anchor="middle" class="txt f-n8"><tspan class="name-color">Julian Putra Dhanurrulla</tspan><tspan class="cursor-char">#</tspan></text>
   </g>
 
   <!-- ==================== HEAVY HORIZONTAL GLITCH BARS & CUTOUTS ==================== -->
@@ -251,14 +262,14 @@
   <g class="glitch-bars">
     <!-- Dark cutout bar (memotong teks secara nyata) -->
     <rect x="80" y="96" width="680" height="8" fill="#0D1117" />
-    <!-- Bold Crimson Glitch Block -->
-    <rect x="110" y="84" width="240" height="5" fill="#E63946" opacity="0.9" />
-    <rect x="480" y="114" width="260" height="6" fill="#E63946" opacity="0.85" />
-    <!-- Stark White Static Flash Bar -->
-    <rect x="140" y="106" width="520" height="3" fill="#F0F6FC" opacity="0.9" />
-    <rect x="260" y="76" width="160" height="3" fill="#F0F6FC" opacity="0.7" />
+    <!-- Warm Terracotta Glitch Blocks -->
+    <rect x="110" y="84" width="240" height="5" fill="#D97757" opacity="0.9" />
+    <rect x="480" y="114" width="260" height="6" fill="#E5C07B" opacity="0.85" />
+    <!-- Brushed Silver Static Flash Bars -->
+    <rect x="140" y="106" width="520" height="3" fill="#8B949E" opacity="0.9" />
+    <rect x="260" y="76" width="160" height="3" fill="#E6EDF3" opacity="0.65" />
     <!-- Small Glitch Artifacts -->
-    <rect x="95" y="122" width="48" height="10" fill="#E63946" opacity="0.8" />
-    <rect x="690" y="88" width="56" height="9" fill="#F0F6FC" opacity="0.75" />
+    <rect x="95" y="122" width="48" height="10" fill="#D97757" opacity="0.8" />
+    <rect x="690" y="88" width="56" height="9" fill="#E5C07B" opacity="0.75" />
   </g>
 </svg>
