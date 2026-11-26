@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="profile.svg" alt="Julian Putra Dhanurrullah - Full-Stack Web Developer" width="100%">
+  <img src="profile.svg?v=2" alt="Julian Putra Dhanurrullah - Full-Stack Web Developer" width="100%">
 </p>
 
 <p align="center">
